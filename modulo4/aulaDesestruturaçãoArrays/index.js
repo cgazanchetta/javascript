@@ -1,10 +1,30 @@
-// desestruturação objetos
+// desestruturação arrays
 
-const person = {
+const fruits = ["banana", "morango", "manga"];
+
+const [firstFruit, secondFruit, thirdFruit] = fruits;
+
+console.log(firstFruit, secondFruit, thirdFruit);
+
+//--------------------------------------------------------------------//
+
+const employeeUm = {
   name: "caio",
   age: 23,
 };
 
-const { name, age } = person;
+const employeeDois = {
+  name: "thayná",
+  age: 28,
+};
 
-console.log(name, age);
+const employeeTres = {
+  name: "zen",
+  age: 2,
+};
+
+const employees = [employeeUm, employeeDois, employeeTres];
+
+const [, { name }] = employees;
+
+console.log(name);
